@@ -162,6 +162,7 @@ button:focus {
 	z-index: 1001;
 	width: 280px;
 	height: 100%;
+    overflow-y: scroll;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-280px,0,0);
 	transform: translate3d(-280px,0,0);
@@ -172,7 +173,8 @@ button:focus {
 .menu {
 	position: relative;
 	z-index: 1000;
-	padding: 3em 1em 0;
+	padding: 3em 1em 1em;
+    background: #081907;
 }
 
 .menu,
