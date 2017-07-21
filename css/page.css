@@ -55,42 +55,10 @@ button::-moz-focus-inner,input::-moz-focus-inner{
 /*--menu--*/
 .menu-button {
     position: fixed;
-    top: 0;
+	z-index: 1000;
     margin: 1em;
-	z-index: 1000;
 	padding: 0;
-	width: 2.5em;
-	height: 2.25em;
-	border: none;
-	text-indent: 2.5em;
-	font-size: 1.5em;
-	color: transparent;
-	background: transparent;
-}
-
-.menu-button::before {
-	position: absolute;
-	top: 0.5em;
-	right: 0.5em;
-	bottom: 0.5em;
-	left: 0.5em;
-	background: linear-gradient(#081907 20%, transparent 20%, transparent 40%, #081907 40%, #081907 60%, transparent 60%, transparent 80%, #081907 80%);
-	content: '';
-}
-
-.menu-button:hover {
-    background: #e8e48f;
-}
-
-button:focus {
-	outline: none;
-}
-
-/* Menu Button */
-.menu-button {
-    position: absolute;
-	z-index: 1000;
-	padding: 0;
+    top: 0;
 	width: 2.5em;
 	height: 2.25em;
 	border: none;
@@ -111,13 +79,13 @@ button:focus {
 }
 
 .menu-button:hover {
-	background: #e8e48f;
-    opacity: 1;
+    background: #e8e48f;
 }
 
 button:focus {
 	outline: none;
 }
+
 
 /* Close Button */
 .close-button {
