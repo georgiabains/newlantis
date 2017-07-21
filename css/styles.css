@@ -49,6 +49,19 @@ h2 {
     margin: auto;
 }
 
+.banner {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    color: #c94e50;
+}
+
+.banner a {
+    color: #5ac9e1;
+}
+
 .landing header {
     width: auto;
     padding: 0;
@@ -210,7 +223,6 @@ ol { list-style: none; margin: 0; padding: 0; }
     margin: 20px 0;
 }
 
-<<<<<<< HEAD
 /*schedule*/
 #schedule {
     margin: 80px auto;
@@ -221,8 +233,6 @@ ol { list-style: none; margin: 0; padding: 0; }
     width: 100%;
 }
 
-=======
->>>>>>> d336f8b5efb81c8242a665215a82245ef48d4ab4
 /*faqs*/
 #faq {
     width: 100%;
@@ -510,7 +520,6 @@ ul.discover li a:hover {
         width: 360px;
     }
     
-<<<<<<< HEAD
     p.media {
         font-size: 11px;
     }
