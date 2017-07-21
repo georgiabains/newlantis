@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ 
+<!--
+
+coded by wonderfullythemes.tumblr.com (Georgia Bains) for Newlantis, New College's Official 2017 Orientation Week
+
+-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>Newlantis</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta name="description" content="The official website for New College's 2017 Orientation Week" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    
+    <!--FontAwesome icons-->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Playfair+Display|Roboto|Shrikhand" rel="stylesheet">
+    
+    <!--script for the sliding dropdown menus-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".answer").hide();
+        $(".question").click(function(){
+        $(this).next(".answer").slideToggle('average');
+        }); 
+    }); 
+    </script>
+    
+    <script src="js/snap.svg-min.js"></script>
+
+    <!--Canvas Dot Connection on MouseOver
+    credit to https://codepen.io/MathiasBerwig/pen/GopGVq-->
+    <script src="js/dots.js"></script>
+
+</head><body>
+
+    <canvas class='connecting-dots'></canvas>
+    
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                <a href="/"><i class="fa fa-compass"></i><span>Home</span></a>
+				<a href="./about.html"><i class="fa fa-compass"></i><span>About</span></a>
+				<a href="./faq.html"><i class="fa fa-compass"></i><span>FAQs</span></a>
+                <a href="./schedule.html"><i class="fa fa-compass"></i><span>Schedule</span></a>
+                <a href="./gallery.html"><i class="fa fa-compass"></i><span>Gallery</span></a>
+				<a href="./team.html"><i class="fa fa-compass"></i><span>Exec Team!</span></a>
+                <a href="./partners.html"><i class="fa fa-compass"></i><span>Partners</span></a>
+                <a href="./gallery.html"><i class="fa fa-compass"></i><span>Gallery</span></a>
+				<a href="./team.html"><i class="fa fa-compass"></i><span>Exec Team!</span></a>
+                <a href="https://campustix.com/tix/352e0d2d/"><i class="fa fa-compass"></i><span>Register</span></a>
+            </div><!--end .icon-list-->
+                    
+            <footer class="footer">
+            
+                <ul class="discover">
+                    <li><a href="https://www.facebook.com/NCOrientation2017"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ncorientation17/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+
+                <p>&copy; Georgia Bains 2017</p>
+
+                <a class="question">Credits</a>
+                <p class="answer">
+                Team Photos: Sharon Li<br>
+                    Photography: Dominick Han<br>
+                    Menu: tympanus.net
+                </p>
+            
+            </footer>
+        </nav>
+
+        <button class="close-button" id="close-button">Close Menu</button>
+        
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+				<path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div><!--end .morph-shape-->
+    </div><!--end .menu-wrap-->
+    
+    <button class="menu-button" id="open-button">Open Menu</button>
+ 
+    <div class="content">
+	   
+        <section id="team">
+            <h2>Meet your Orientation Executive Team!</h2>
+    		
+            <div class="member">
+    		    <div class="meminfo">
+                    <h3>Sara Ikenaga</h3>
+                    <h4>&mdash;Orientation Coordinator</h4>
+                    
+                    <p><i>5th Year Psychology, Immunology and Physiology</i></p>
+
+                    <p>Without Orientation, I definitely would not have been the person I am today. When my leaders took me under their wing, that's when I really understood what it meant to be part of the community. Throughout university, you're going to need that support, resources, mentors and friends that you can gain during Orientation. So come out and hang out with us </p>
+                </div><!--end .meminfo-->
+                <img src="img/Sara.jpg" alt="Sara's photo" /><!--Sara's photo-->
+            </div><!--end .member-->
+                
+            <div class="member">
+                <div class="meminfo">
+                    <h3>Aalia Sharafally</h3>
+                    <h4>&mdash;Orientation Coordinator</h4>
+                    
+                    <p><i>4th Year Pharmacology and Human Biology</i></p>
+
+                    <p>Orientation is your first look into the amazing city of Toronto and UofT - so make the most of it- I know I did! I’m so excited to meet all of you and help you get the most out of this amazing life experience!</p>
+    		    </div><!--end .meminfo-->
+		        <img src="img/Aalia.JPG" alt="Aalia's photo" /><!--Aalia's photo-->
+		    </div><!--end .member-->
+		    
+            <br>
+		    <!--Sponsorship & Philanthropy-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Mafroja Bhuiyan</h3>
+                    <h4>&mdash;Sponsorship and  Philanthropy</h4>
+                    
+                    <p><i>3rd Year Neuroscience and Evolutionary & Ecology Biology</i></p>
+
+                    <p>Welcome to your second home, we’re all a diverse family! This is the first thing I noticed at Orientation. I am so glad you chose New College, and I’m so excited to share this home with you. To kickstart this journey for you, our team has planned an amazing 5 days of fun filled adventures, can’t wait to see you at the finish line!</p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Mafroja.JPG" alt="Mafroja's photo" />
+    		</div><!--end .member-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Saher Panjwani</h3>
+                    <h4>&mdash;Sponsorship and  Philanthropy</h4>
+                    
+                    <p><i>4th Year Neuroscience and Philosophy</i></p>
+ 
+                    <p>Welcome to the next chapter of your life journey! The perfect first step on this path is Orientation and I’m so excited to be able to take that next step with you!</p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Saher.JPG" alt="Saher's photo" />
+    		</div><!--end .member-->
+    		
+    		<!--Marketing & Promotions-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Akhalya Indrakumar</h3>
+                    <h4>&mdash;Marketing and Promotions</h4>
+                    
+                    <p><i>4th year Cell & Molecular Biology and Human Biology</i></p>
+ 
+                    <p>Welcome to UofT! You made it! I hope that Orientation will be as memorable and exciting for you as it was for all of us! We can’t wait for you all to become a part of our ever-growing New College family <3</p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Akhalya.JPG" alt="Akhalya's photo" />
+    		</div><!--end .member-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Sharon Li</h3>
+                    <h4>&mdash;Marketing and Promotions</h4>
+                    
+                    <p><i>4th year Psychology and Employment Relations</i></p>
+ 
+                    <p>Orientation is a celebration of a new chapter in your life, where you get to cultivate new friendships, learn more about UofT, and acclimate yourself to the New College community. We are so excited to meet you in September! :) </p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Sharon.JPG" alt="Sharon's photo" />
+    		</div><!--end .member-->
+    		
+    		
+    		<!--Graphics / Web-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Georgia Bains</h3>
+                    <h4>&mdash;Graphics and Web Design</h4>
+                    
+                    <p><i>2nd Year Art History & Political Science</i></p>
+ 
+                    <p>Orientation Week was definitely one of the highlights of my first year and I’m honoured to have the chance to make it as exciting for all of you! Welcome to New College and to UofT :D </p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Georgia.JPG" alt="Georgia's photo" />
+    		</div><!--end .member-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Alison Lamb</h3>
+                    <h4>&mdash;Graphics and Web Design</h4>
+                    
+                    <p><i>3rd Year Biological Physics</i></p>
+ 
+                    <p>WELCOME TO NEW COLLEGE!! I can't wait to meet y'all  Get ready for a fun week of adventure because Orientation 2017 is gonna be ✔</p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Alison.JPG" alt="Alison's photo" />
+    		</div><!--end .member-->
+		    
+		    <!--Gen Planning-->
+    		    
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Ilya Demchenko</h3>
+                    <h4>&mdash;General Planning</h4>
+                    
+                    <p><i>4th Year Neuroscience and Physiology</i>/p>
+ 
+                    <p>Orientation is the first event at UofT, where you are going to learn not only everything about a certain desired subject, but also new unexpected things about life situations, social communication and your own personality. Get involved in the Orientation to open the NEW page in your life!</p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Ilya.jpg" alt="Ilya's photo" />
+    		</div><!--end .member-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Rebecca Kay</h3>
+                    <h4>&mdash;General Planning</h4>
+                    
+                    <p><i>3rd Year Finance and Computer Science</i></p>
+ 
+                    <p>Welcome to the New College family! What is so wonderful about Orientation is the number of different events and activities you can experience in less than one week. Have fun and don’t be afraid to try something new! Looking forward to meeting everyone! </p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Rebecca.JPG" alt="Rebecca's photo" />
+    		</div><!--end .member-->
+    		
+    		<div class="member">
+    		    <div class="meminfo">
+    		        <h3>Nabila Tasneem</h3>
+                    <h4>&mdash;General Planning</h4>
+                    
+                    <p><i>3rd Year Neuroscience and Sociology</i></p>
+ 
+                    <p>Welcome to New College! In the next four years to come, this will be your home away from home. Here at New College, we make lasting friendships and joyous memories. And what better event to start with than Orientation itself? Our team has worked hard on bringing you an Orientation filled with exciting events and fun-filled activities. So explore and enjoy!</p>
+    		    </div><!--end .meminfo-->
+    		    <img src="img/Nabilah.JPG" alt="Nabilah's photo" />
+    		</div><!--end .member-->
+
+    		
+    	</section><!--end .team-->
+        
+    </div>
+    
+<script src="js/classie.js"></script>
+    <script src="js/main4.js"></script>
+</body>
+</html>
