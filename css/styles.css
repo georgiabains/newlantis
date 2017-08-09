@@ -5,7 +5,7 @@ body {
     padding: 0;
 	color: #222;
 	background: #fff;
-	font-size: 20px;
+	font-size: 18px;
     line-height: 28px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     line-height: 40px;
+}
+
+b {
+    font-weight: 700;
 }
 
 .landing {
@@ -231,6 +235,15 @@ ol { list-style: none; margin: 0; padding: 0; }
 
 #schedule img {
     width: 100%;
+}
+
+#schedule ul {
+    margin: 0;
+    padding: 0;
+}
+
+#schedule li {
+    margin: 0 0 10px 50px;
 }
 
 /*faqs*/
