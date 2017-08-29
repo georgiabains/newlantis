@@ -1,129 +1,397 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
- 
-<!--
-
-coded by Georgia Bains (georgiabainsdesign.me) for Newlantis, New College's Official 2017 Orientation Week
-
--->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 
-    <title>Newlantis</title>
-    <link rel="shortcut icon" href="img/logo.png">
-    <link rel="alternate" type="application/rss+xml" href="{RSS}">
-    <meta name="description" content="The New College Orientation 2017 Team Presents: Newlantis" />
-
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/menu_bubble.css" />
-
-    <!--FontAwesome icons-->
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Coiny|Playfair+Display|Quicksand|Roboto|Shrikhand" rel="stylesheet">
     
-    <script src="js/snap.svg-min.js"></script>
-    
-    <script src="//www.powr.io/powr.js" external-type="html"></script> 
-    
-    
-    <!--script for the sliding dropdown menus-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".answer").hide();
-            $(".question").click(function(){
-            $(this).next(".answer").slideToggle('average');
-            }); 
-        }); 
-    </script>
-   
-<!--Canvas Dot Connection on MouseOver
-credit to https://codepen.io/MathiasBerwig/pen/GopGVq-->
-<script src="js/dots.js"></script>
+    <head>
 
-</head><body>
+    <!--
+    coded by Georgia Bains (georgiabainsdesign.me) for Newlantis, New College's Official 2017 Orientation Week
+    -->
 
-<canvas class='connecting-dots'></canvas>
-    
-<div class="landing">
-    <div class="landingcontent">
-    
-    <section id="welcome" class="first">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <title>Newlantis: New College Orientation 2017</title>
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <meta name="description" content="The New College Orientation 2017 Team Presents: Newlantis" />
+
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!--FontAwesome icons-->
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:300,700|Open+Sans:300" rel="stylesheet">
         
-        <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/VMCQ6hH5qPc?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
         
-    	    <div class="text">
-                <h2>The New College Orientation Team  Presents: Newlantis</h2>
-    				
-            <p>We are so excited to have you join us this Fall for Orientation Week 2017!</p>
-            <p>Orientation Week will take place from the 4th-8th of September 2017, with events taking place during classes on the 7th and 8th.</p>
-            <p>O-week is full of events that help you prepare for your university experience whether that be socially or academically. . . New’s Got You! </p>
-            </div><!--end .text-->
-           
-        <div class="powr-countdown-timer" id="b52e4d40_1497082759"></div>
+        <script src="js/scripts.js" type="text/javascript"></script>
         
-    </section><!--end .welcome-->
+        <script src="//www.powr.io/powr.js" external-type="html"></script>
+
+    </head>
     
-    <header class="image"><a href="/"><img src="img/simplelogo.png" alt="Newlantis logo" /></a></header>
-        <div class="funstuff">
-            <p class="register"><a href="https://campustix.com/tix/352e0d2d/">Register Here!</a></p>
+    <body>
         
-            <p class="media">Follow us for updates! <a href="https://www.facebook.com/NCOrientation2017"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/ncorientation17/"><i class="fa fa-instagram"></i></a>
-            </p>
-        </div><!--end .funstuff-->
+        <div id="top">
             
-    </div><!--end .landingcontent-->
-</div><!--end .landing-->
-
-    <div class="menu-wrap">
-        <nav class="menu">
-            <div class="icon-list">
-                <a href="./index.html"><i class="fa fa-compass"></i><span>Home</span></a>
-				<a href="./about.html"><i class="fa fa-compass"></i><span>About</span></a>
-				<a href="./faq.html"><i class="fa fa-compass"></i><span>FAQs</span></a>
-
-                <a href="./schedule.html"><i class="fa fa-compass"></i><span>Schedule</span></a>
-                <a href="./gallery.html"><i class="fa fa-compass"></i><span>Gallery</span></a>
-				<a href="./team.html"><i class="fa fa-compass"></i><span>Exec Team!</span></a>
-                <a href="./partners.html"><i class="fa fa-compass"></i><span>Partners</span></a>
-                <a href="https://campustix.com/tix/352e0d2d/"><i class="fa fa-compass"></i><span>Register</span></a>
-            </div><!--end .icon-list-->
+            <nav>
+                <ul>
+                    <li><a href="./schedule.html">Schedule</a></li>
+                    <li class="register"><a href="https://campustix.com/tix/352e0d2d/">Register Now!</a></li>
                     
-            <footer class="footer">
-            
-                <ul class="discover">
-                    <li><a href="https://www.facebook.com/NCOrientation2017"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/ncorientation17/"><i class="fa fa-instagram"></i></a></li>
+                    
+                     <p class="description">New College Orientation Week 2017 | Sept. 4th - Sept. 8th 2017</p>
+                    
                 </ul>
+            </nav>
+            
+            <a class="title" href="/">
+                <img src="img/simplelogo.png" alt="Newlantis"/>
+            </a>
+            
+        </div><!--end #top-->
+        
+        <div class="intro">
+       
+            <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/m9VaG2GFiSE?autoplay=0&loop=1&playlist=m9VaG2GFiSE&rel=0&amp;showinfo=0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+            
+        </div><!--end .intro-->
+        
+        <div class="explore">
+                <a href="#content"><i class="fa fa-compass"></i></a>
+        </div><!--end .explore-->
+        
+        <div id="content">
+            
+            <div class="background"></div>
+            
+            <section>
+            
+                <div class="powr-countdown-timer" id="b52e4d40_1497082759"></div>
 
+                <!--Welcome (landing page)-->
+                <div class="text">
+                    <div class="words">
+                        
+                        <h2>The New College Orientation Team  Presents: Newlantis</h2>
+
+                        <p>We are so excited to have you join us this Fall for Orientation Week 2017!</p>
+                        <p>Orientation Week will take place from the 4th-8th of September 2017, with events taking place during classes on the 7th and 8th.</p>
+                        <p>O-week is full of events that help you prepare for your university experience whether that be socially or academically. . . New’s Got You! </p>
+                        
+                    </div><!--end .words-->
+                </div><!--end .text-->
+                
+                <!--About NC Orientation-->
+                <div class="about">
+                    
+                    <div class="words">
+                        
+                        <h2>The 5 'W's of Orientation</h2>
+
+                        <h3>Who?</h3>
+                        <p>It’s for you! The new incoming students of New College! </p>
+
+                        <h3>What?</h3>
+                        <p>A week of fun activities and informative sessions with upper year leaders and students' services</p>
+
+                        <h3>Where?</h3>
+                        <p>At your new home away from home: New College!</p>
+
+                        <h3>When?</h3>
+                        <p>Sept. 4 - Sept. 8, 2017</p>
+                        <p>Thursday & Friday will feature drop in programs while classes begin</p>
+
+                        <h3>Why?</h3>
+                        <p>To integrate you into our community and help you with the transition to university life</p>
+                        
+                    </div><!--end .words-->
+                </div><!--end .about-->
+                
+                <div class="expect">
+                    
+                    <div class="words">
+                    
+                        <h2>What to Expect During the Week</h2>
+
+                        <ul>
+                            <li>Opportunities to meet fellow incoming students as well as upper-years, who will become your mentors for years to come</li>
+                            <li>Explore downtown Toronto on a city sightseeing bus</li>
+                            <li>Attend our annual semi-formal at the landmark Royal Ontario Museum and visit the exhibits!</li>
+                            <li>Gain excellent resources that will help you reach your highest potential this academic year</li>
+                            <li>Explore the expansive variety of clubs that New College and the University of Toronto has to offer. We hope you find a club that interests you! It’s a great way to make friends and be involved in something you are passionate about </li>
+                        </ul>
+                        
+                    </div><!--end .words-->
+                    
+                </div><!--end .about-->
+                
+                <!--Frequently Asked Questions-->
+                <div class="faq">
+                    
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Lxcw7cxlEgQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+    				
+                    <ul>
+                        <li class="question">Will food be provided during the week?</li>
+                        <p class="answer">
+                            Lunch and dinner will be provided for most of the days (not all). We will be accommodating dietary restrictions (i.e. halal, vegetarian, vegan, gluten-free, and nut-free). We recommend bringing snacks and non-alcoholic drinks throughout the day to keep you going if needed.
+                        </p>
+
+                        <li class="question">Will there be on-campus living accommodations for commuter students?</li>
+                        <p class="answer">
+                            Unfortunately, for the safety of our students we will not provide residence accommodations for commuter students.
+                        </p>
+
+                        <li class="question">What happens if I’m late?</li>
+                        <p class="answer">
+                            There is no penalty for being late than missing out on our great programming. To avoid confusion and loss of direction, we prefer all students to be on time for the Orientation as events will happen right from the get go. 
+                        </p>
+
+                        <li class="question">Will there be alcohol at Orientation?</li> 
+                        <p class="answer">
+                            New College Orientation will NOT have any alcohol surrounding events, to ensure that all our students are being safe and to avoid any issues. 
+                        </p>
+
+                        <li class="question">Can I bring a friend?</li> 
+                        <p class="answer">
+                            Only those who are New College students who have registered and paid for Orientation will be able to attend our Orientation events. A wristband policy will be in effect. 
+                        </p>
+
+                        <li class="question">What is the difference between New College Orientation and Ignite?</li> 
+                        <p class="answer">
+                            New College Orientation includes both social- and academic- based activities as IGNITE! is an academic focused orientation. IGNITE! will be limited to 120 students and will take place on Saturday, September 9<sup>th</sup>. Students are welcome to take part in both Orientations; however, you will have to complete both registration forms.
+                        </p>
+
+                        <li class="question">Do I have to wear New College shirts throughout Orientation?</li> 
+                        <p class="answer">
+                            We strongly encourage all registered students to wear the 2017 Orientation t-shirts that we will be providing in the Orientation Kits. With that being said, your wristband is what is required for entry for majority of Orientation events. 
+                        </p>
+
+                        <li class="question">Will there be phone chargers provided?</li> 
+                        <p class="answer">
+                            New College does have charging stations throughout the premises, so you will be able to charge your phones. However, New College is not responsible for the items left at charging stations so make sure you keep an eye when charging your phone!
+                        </p>
+
+                        <li class="question">Where do I register?</li> 
+                        <p class="answer">
+                            Registration can be done here: <a href="https://campustix.com/tix/352e0d2d/">Register for New College Orientation</a><br>
+
+                            Students are able to register until September 3<sup>rd</sup> online. Late registrations will still be accepted in person starting September 4<sup>th</sup> during Orientation. Please note, full payment is required prior to participating in Orientation events.
+                        </p>
+
+                        <li class="question">I’ll be commuting from far away, will it be worth my time?</li>
+                        <p class="answer">
+                            Of course! This is a great opportunity to find out what you can expect over the next 4 years of your university career. Not only will you be able to gain information about resources on campus, but also meet people that you will build long-lasting friendships with. 
+                        </p>
+
+                        <li class="question">Do I have to attend all the events?</li>
+                        <p class="answer">
+                            Well… no, but we highly encourage you to try out all the events! There are different events for different people, and all are programs should benefit you in some way! 
+                        </p>
+
+                        <p>
+                            
+                            If you have any other questions about Orientation Week please don't hesitate to contact us!
+                        
+                            <span class="social">
+                                <a href="https://www.instagram.com/ncorientation17/"><i class="fa fa-instagram" alt="instagram"></i></a> <a href="https://www.facebook.com/NCOrientation2017"><i class="fa fa-facebook" alt="facebook"></i></a>
+                                <a href="https://campustix.com/tix/352e0d2d/">Register!</a>
+                            </span>
+                            
+                        </p>
+                        
+                    </ul>
+                    
+                </div><!--end .faq-->
+                
+                <!--Exec Team-->
+                <div class="team">
+                    <h2>Meet your Orientation Executive Team!</h2>
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Sara Ikenaga</h3>
+                            <h4>&mdash;Orientation Coordinator</h4>
+
+                            <p><i>5th Year Psychology, Immunology and Physiology</i></p>
+
+                            <p>Without Orientation, I definitely would not have been the person I am today. When my leaders took me under their wing, that's when I really understood what it meant to be part of the community. Throughout university, you're going to need that support, resources, mentors and friends that you can gain during Orientation. So come out and hang out with us </p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Sara.jpg" alt="Sara's photo" /><!--Sara's photo-->
+                    </div><!--end .member-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Aalia Sharafally</h3>
+                            <h4>&mdash;Orientation Coordinator</h4>
+
+                            <p><i>4th Year Pharmacology and Human Biology</i></p>
+
+                            <p>Orientation is your first look into the amazing city of Toronto and UofT - so make the most of it- I know I did! I’m so excited to meet all of you and help you get the most out of this amazing life experience!</p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Aalia.JPG" alt="Aalia's photo" /><!--Aalia's photo-->
+                    </div><!--end .member-->
+
+                    <br>
+                    <!--Sponsorship & Philanthropy-->
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Mafroja Bhuiyan</h3>
+                            <h4>&mdash;Sponsorship and  Philanthropy</h4>
+
+                            <p><i>3rd Year Neuroscience and Evolutionary & Ecology Biology</i></p>
+
+                            <p>Welcome to your second home, we’re all a diverse family! This is the first thing I noticed at Orientation. I am so glad you chose New College, and I’m so excited to share this home with you. To kickstart this journey for you, our team has planned an amazing 5 days of fun filled adventures, can’t wait to see you at the finish line!</p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Mafroja.JPG" alt="Mafroja's photo" />
+                    </div><!--end .member-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Saher Panjwani</h3>
+                            <h4>&mdash;Sponsorship and  Philanthropy</h4>
+
+                            <p><i>4th Year Neuroscience and Philosophy</i></p>
+
+                            <p>Welcome to the next chapter of your life journey! The perfect first step on this path is Orientation and I’m so excited to be able to take that next step with you!</p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Saher.JPG" alt="Saher's photo" />
+                    </div><!--end .member-->
+
+                    <!--Marketing & Promotions-->
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Akhalya Indrakumar</h3>
+                            <h4>&mdash;Marketing and Promotions</h4>
+
+                            <p><i>4th year Cell & Molecular Biology and Human Biology</i></p>
+
+                            <p>Welcome to UofT! You made it! I hope that Orientation will be as memorable and exciting for you as it was for all of us! We can’t wait for you all to become a part of our ever-growing New College family <i class="fa fa-heart"></i></p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Akhalya.JPG" alt="Akhalya's photo" />
+                    </div><!--end .member-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Sharon Li</h3>
+                            <h4>&mdash;Marketing and Promotions</h4>
+
+                            <p><i>4th year Psychology and Employment Relations</i></p>
+
+                            <p>Orientation is a celebration of a new chapter in your life, where you get to cultivate new friendships, learn more about UofT, and acclimate yourself to the New College community. We are so excited to meet you in September! :) </p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Sharon.JPG" alt="Sharon's photo" />
+                    </div><!--end .member-->
+
+
+                    <!--Graphics / Web-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Georgia Bains</h3>
+                            <h4>&mdash;Graphics and Web Design</h4>
+
+                            <p><i>2nd Year Art History & Political Science</i></p>
+
+                            <p>Orientation Week was definitely one of the highlights of my first year and I’m honoured to have the chance to make it as exciting for all of you! Welcome to New College and to UofT :D </p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Georgia.JPG" alt="Georgia's photo" />
+                    </div><!--end .member-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Alison Lamb</h3>
+                            <h4>&mdash;Graphics and Web Design</h4>
+
+                            <p><i>3rd Year Biological Physics</i></p>
+
+                            <p>WELCOME TO NEW COLLEGE!! I can't wait to meet y'all  Get ready for a fun week of adventure because Orientation 2017 is gonna be ✔</p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Alison.JPG" alt="Alison's photo" />
+                    </div><!--end .member-->
+
+                    <!--Gen Planning-->
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Ilya Demchenko</h3>
+                            <h4>&mdash;General Planning</h4>
+
+                            <p><i>4th Year Neuroscience and Physiology</i></p>
+
+                            <p>Orientation is the first event at UofT, where you are going to learn not only everything about a certain desired subject, but also new unexpected things about life situations, social communication and your own personality. Get involved in the Orientation to open the NEW page in your life!</p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Ilya.jpg" alt="Ilya's photo" />
+                    </div><!--end .member-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Rebecca Kay</h3>
+                            <h4>&mdash;General Planning</h4>
+
+                            <p><i>3rd Year Finance and Computer Science</i></p>
+
+                            <p>Welcome to the New College family! What is so wonderful about Orientation is the number of different events and activities you can experience in less than one week. Have fun and don’t be afraid to try something new! Looking forward to meeting everyone! </p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Rebecca.JPG" alt="Rebecca's photo" />
+                    </div><!--end .member-->
+
+                    <div class="member">
+                        <div class="meminfo">
+                            <h3>Nabilah Tasneem</h3>
+                            <h4>&mdash;General Planning</h4>
+
+                            <p><i>3rd Year Neuroscience and Sociology</i></p>
+
+                            <p>Welcome to New College! In the next four years to come, this will be your home away from home. Here at New College, we make lasting friendships and joyous memories. And what better event to start with than Orientation itself? Our team has worked hard on bringing you an Orientation filled with exciting events and fun-filled activities. So explore and enjoy!</p>
+                        </div><!--end .meminfo-->
+                        <img src="img/execs/Nabilah.JPG" alt="Nabilah's photo" />
+                    </div><!--end .member-->
+
+
+                </div><!--end .team-->
+                
+                <!--Partners-->
+                <div class="partners">
+                
+                    <center><h2>Orientation Week is partnered with: </h2></center>
+                    
+                    <a href="http://www.newcollege.utoronto.ca/"><img src="img/partners/New%20college%20logo%20Transparent.png" alt="New College's Logo" /></a>
+                
+                    <a href="https://www.facebook.com/NewCollegeORSL/"><img src="img/partners/ORSL_2016Horizontal.png" alt="" /></a>
+                
+                </div><!--end .partners-->
+                
+                <!--Sponsors--
+                <div class="sponsors">
+                    sponsors here
+                </div>-->
+                
+                <!--Gallery--
+                <div class="gallery">
+                
+                    images in a slider
+                    
+                </div>-->
+                
+                <a href="#top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+                
+                <div class="credits">
+                    
                 <p>&copy; Georgia Bains 2017</p>
 
-                <a class="question">Credits</a>
-                <p class="answer">
-                Team Photos: Sharon Li<br>
+                <p>
+                    Team Photos: Sharon Li<br>
                     Photography: Dominick Han<br>
-                    Menu: tympanus.net
+                    Videography: Akhalya Indrakumar and Sharon Li
                 </p>
+                </div><!--end .credits-->
+                
+            </section>
+        
+        </div><!--end .content-->
 
-            </footer>
-        </nav><!--end nav.menu-->
-
-        <button class="close-button" id="close-button">Close Menu</button>
-
-        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
-				<path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
-            </svg>
-        </div><!--end .morph-shape-->
-    </div><!--end .menu-wrap-->
-			
-    <button class="menu-button" id="open-button">Open Menu</button>
+    </body>
     
-    <script src="js/classie.js"></script>
-    <script src="js/main4.js"></script>
-</body>
 </html>
